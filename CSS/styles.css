@@ -1,0 +1,125 @@
+/*
+Authors: Group 2
+Date: 17 Oct. 2024
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, figure {
+    margin: 0;
+    padding:0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule show mobile class and hide tablet-desktop */
+.mobile, .mobile-tablet {
+    display: block;
+}
+
+.tablet-desktop, .desktop {
+    display: none;
+}
+
+/* Style rules for header area */
+
+/* Style rules for navigation area */
+
+/* Style rules for main */
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: .85em;
+    font-weight: bold;
+    background-color: rgba(167, 231, 252, 1);
+    color: #000000;
+}
+
+/* Mobile Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+    /*Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+    
+    .mobile, .mobile-nav {
+        display: none;
+    }
+    
+    /* Tablet Viewport: Style rules for header area */
+    
+    /* Tablet Viewport: Style rules for nav area */
+    
+    /* Tablet Viewport: Style rules for main area */
+    
+    /*Tablet Viewport: Style rules for footer content */
+   #grid {
+    display: block;
+    grid-template-columns: auto;
+    }
+
+figure {
+    font-size: 1em;
+    color: black;
+}
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 100px), print {
+    
+    /* Tablet Viewport: Show desktop class, hide mobile-tablet class*/
+    .desktop {
+        display: block;
+    }
+    
+    .mobile-tablet {
+        display:none;
+    }
+    
+    /* Tablet Viewport: Style rules for header area */
+    
+    /* Tablet Viewport: Style rules for nav area */
+    
+    /* Tablet Viewport: Style rules for main area */
+    
+    /*Tablet Viewport: Style rules for footer content */
+    #grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    }
+   
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px), print {
+     /* Tablet Viewport: Style rules for header area */
+    
+    /* Tablet Viewport: Style rules for nav area */
+    
+    /* Tablet Viewport: Style rules for main area */
+    
+    /*Tablet Viewport: Style rules for footer content */
+
+}
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
