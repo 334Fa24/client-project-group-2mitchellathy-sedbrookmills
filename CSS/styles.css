@@ -34,6 +34,28 @@ img {
 
 /* Style rules for header area */
 
+header {
+ Max-width:100%;
+ 
+}
+
+h1{
+    text-align-last: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+
+}
+
+.Booknow {
+    padding-left: 128px;
+    
+}
+
+
 /* Style rules for hamburger navigation area */
 .mobile-nav a {
     text-decoration: none;
@@ -46,7 +68,7 @@ img {
 
 .mobile-nav a.menu-icon {
     display: block;
-    position: absolute;
+   position: absolute;
     right: 0;
     top: 0;
 }
