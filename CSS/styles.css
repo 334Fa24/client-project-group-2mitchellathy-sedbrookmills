@@ -127,11 +127,6 @@ footer {
     grid-template-columns: auto;
     }
 
-figure {
-    font-size: 1em;
-    color: black;
-}
-
 }
 
 /* Media Query for Desktop Viewport */
