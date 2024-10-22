@@ -12,6 +12,13 @@ body, header, nav, main, footer, figure {
 }
 
 /* Style rules for body and images */
+
+.container {
+    position: relative;
+    text-align: center;
+    color: #ffc700;
+}
+
 body {
     background-color: #fff;
     color: #000;
@@ -22,6 +29,14 @@ img {
 }
 
 /* Style rules for mobile viewport */
+
+.centered {
+    position: absolute;
+    top: 9%;
+    left: 2%;
+    transform: translate(-50%, -31%);
+    font-size: 4vw
+}
 
 /* Style rule show mobile class and hide tablet-desktop and menu-links id*/
 .mobile {
@@ -41,6 +56,7 @@ header {
 
 h1{
     text-align-last: center;
+    color: #fff;
 }
 
 .logo {
@@ -74,6 +90,13 @@ h1{
 }
 
 /* Style rules for main */
+
+.centered {
+    position: abolute;
+    top: 50%;
+    left: 50%;
+    transform: translated (-50%, -50%);
+}
 
 /* Style rules for footer content */
 footer {
@@ -121,11 +144,20 @@ footer {
     
     /* Tablet Viewport: Style rules for main area */
     
+    .centered {
+    top: 50%;
+    left: 50%;
+}
+    
     /*Tablet Viewport: Style rules for footer content */
     #grid {
         display: grid;
         grid-template-columns: auto auto auto;
         grid-gap: 10px;
+    }
+    
+    h1 {
+        white-space: nowrap;
     }
 
 }
