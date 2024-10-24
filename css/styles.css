@@ -98,6 +98,12 @@ h1{
     transform: translated (-50%, -50%);
 }
 
+ .welcome {
+    font-size: 14vw;
+    color: #ffc700;
+    text-align: center;
+    }
+
 /* Style rules for footer content */
 footer {
     text-align: center;
@@ -149,8 +155,44 @@ footer {
     left: 50%;
 }
     #strip {
-    height: 250px;
+    height: 35vw;
+    padding-bottom: 10px;
     }
+    
+    .first {
+        width: 40vw;
+        height: 60vw;
+        float: left;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    
+    .welcome {
+        font-size: 6vw;
+        text-align: left;
+    }
+    
+    .graph {
+        font-size: 1.25em;
+    }
+    
+    .second {
+        width: 52vw;
+        height: 60vw;
+        float: right;
+        padding-right: 10px;
+        padding-top: 10px;  
+    }
+  
+    .ammenity {
+        width: 30vw;
+        height: 25vw;
+        padding-right: 10px;
+        float: right;
+    }
+    
+    .testimonial
     
     /*Tablet Viewport: Style rules for footer content */
     #grid {
