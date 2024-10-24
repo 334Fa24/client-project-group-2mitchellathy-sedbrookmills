@@ -5,9 +5,14 @@ File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, figure {
+body,
+header,
+nav,
+main,
+footer,
+figure {
     margin: 0;
-    padding:0;
+    padding: 0;
     border: 0;
 }
 
@@ -35,7 +40,7 @@ img {
     top: 9%;
     left: 2%;
     transform: translate(-50%, -31%);
-    font-size: 4vw
+    font-size: 4vw;
 }
 
 /* Style rule show mobile class and hide tablet-desktop and menu-links id*/
@@ -43,18 +48,18 @@ img {
     display: block;
 }
 
-.tablet-desktop, #menu-links {
+.tablet-desktop,
+#menu-links {
     display: none;
 }
 
 /* Style rules for header area */
 
 header {
- Max-width:100%;
- 
+    max-width: 100%;
 }
 
-h1{
+h1 {
     text-align-last: center;
     color: #fff;
 }
@@ -63,14 +68,11 @@ h1{
     width: 100px;
     height: 100px;
     float: left;
-
 }
 
 .Booknow {
     padding-left: 128px;
-    
 }
-
 
 /* Style rules for hamburger navigation area */
 .mobile-nav a {
@@ -79,12 +81,12 @@ h1{
     text-align: center;
     font-size: 1.75em;
     color: #ffc700;
-    padding: 3%
+    padding: 3%;
 }
 
 .mobile-nav a.menu-icon {
     display: block;
-   position: absolute;
+    position: absolute;
     right: 0;
     top: 0;
 }
@@ -98,19 +100,111 @@ h1{
     transform: translated (-50%, -50%);
 }
 
- .welcome {
+.welcome {
     font-size: 14vw;
     color: #ffc700;
     text-align: center;
+}
+
+/* Style rules for elements on about page main */
+
+#grid_about {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+
+.Employee {
+    color:black;
+    text-align: center;
+    border:double;
+    padding-top: 3em;
+    margin: 5em;
+}
+
+.names {
+    color:black;
+
+}
+.about_info {
+    text-align-last: center;
+    margin: 5em;
+    border:double;
+    padding:3em;
+}
+
+.container_about {
+     position: relative;
+    text-align: center;
+    color: #ffc700;
+}
+
+.employee_intro {
+    text-align: center;
+    background-color: #A7E7FC;
+    height: 7em;
+   
+}
+.meet_our_team {
+    height: 100%;
     }
 
+
+.employee_photos {
+    height: 80%;
+    width: 90%;
+    align-content: center;
+}
+
+/*style rules for the Resources main*/
+
+.QandA_Tips {
+    margin: 15%;
+}
+
+.tips {
+    padding: 10%;
+    border:double;
+    border-color:  #ffc700;
+}
+.questions {
+    padding: 10%;
+    border:double;
+    border-color:#A7E7FC;
+}
+
+#grid_resources {
+     display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+
+.testamonial {
+    color:black;
+    text-align: center;
+    border:double;
+    padding-top: 3em;
+    margin: 5em;
+    background-color: #A7E7FC; 
+}
+
+.container_resources {
+      position: relative;
+    text-align: center;
+    color: #ffc700;
+
+}
 /* Style rules for footer content */
 footer {
     text-align: center;
-    font-size: .85em;
+    font-size: 0.85em;
     font-weight: bold;
     background-color: rgba(167, 231, 252, 1);
     color: #000000;
+}
+
+.Employee {
+    color: black;
 }
 
 /* Mobile Query for Tablet Viewport */
@@ -119,46 +213,48 @@ footer {
     .tablet-desktop {
         display: block;
     }
-    
-    .mobile, .mobile-nav, .desktop {
+
+    .mobile,
+    .mobile-nav,
+    .desktop {
         display: none;
     }
-    
+
     /* Tablet Viewport: Style rules for header area */
-    
+
     /* Tablet Viewport: Style rules for nav area */
     nav {
         padding: 1%;
     }
-    
+
     nav ul {
         list-style-type: none;
-        text-align: end
+        text-align: end;
     }
-    
+
     nav li {
         font-size: 1.3em;
         display: inline-block;
     }
-    
+
     nav li a {
         text-decoration: none;
         padding: 0 0.25em;
         display: block;
         color: #ffc700;
     }
-    
+
     /* Tablet Viewport: Style rules for main area */
-    
+
     .centered {
-    top: 50%;
-    left: 50%;
-}
-    #strip {
-    height: 35vw;
-    padding-bottom: 10px;
+        top: 50%;
+        left: 50%;
     }
-    
+    #strip {
+        height: 35vw;
+        padding-bottom: 10px;
+    }
+
     .first {
         width: 40vw;
         height: 60vw;
@@ -167,31 +263,31 @@ footer {
         padding-left: 10px;
         padding-top: 10px;
     }
-    
+
     .welcome {
         font-size: 6vw;
         text-align: left;
     }
-    
+
     .graph {
         font-size: 1.25em;
     }
-    
+
     .second {
         width: 52vw;
         height: 60vw;
         float: right;
         padding-right: 10px;
-        padding-top: 10px;  
+        padding-top: 10px;
     }
-  
+
     .ammenity {
         width: 30vw;
         height: 25vw;
         padding-right: 10px;
         float: right;
     }
-    
+
     .testimonial
     
     /*Tablet Viewport: Style rules for footer content */
@@ -200,48 +296,44 @@ footer {
         grid-template-columns: auto auto auto;
         grid-gap: 10px;
     }
-    
+
     h1 {
         white-space: nowrap;
     }
-
 }
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 100px), print {
-    
     /* Desktop Viewport: Show desktop class, hide mobile-tablet class*/
     .desktop {
         display: block;
     }
-    
+
     .mobile-tablet {
-        display:none;
+        display: none;
     }
-    
+
     /* Desktop Viewport: Style rules for header area */
-    
+
     /* Desktop Viewport: Style rules for nav area */
     nav li {
         font-size: 2em;
     }
-    
+
     /* Desktop Viewport: Style rules for main area */
-    
+
     /*Desktop Viewport: Style rules for footer content */
-   
 }
 
 /* Media Query for Large Desktop Viewports */
 @media screen and (min-width: 1921px), print {
     /* Large Desktop Viewport: Style rules for header area */
-    
-    /* Large Desktop Viewport: Style rules for nav area */
-    
-    /* Large Desktop Viewport: Style rules for main area */
-    
-    /* Large Desktop Viewport: Style rules for footer content */
 
+    /* Large Desktop Viewport: Style rules for nav area */
+
+    /* Large Desktop Viewport: Style rules for main area */
+
+    /* Large Desktop Viewport: Style rules for footer content */
 }
 
 /* Media Query for Print */
