@@ -14,3 +14,15 @@ function hamburger() {
         menu.style.display = "block";
     }
 }
+
+////Service description display funtion
+//function basicBathBrush() {
+//    var service = document.getElementById("basic-bath-brush");
+//    if (service.style.display === none) {
+//        service.style.display = block;
+//    }
+//    else {
+//        service.style.display = none;
+//    }
+//    
+//}

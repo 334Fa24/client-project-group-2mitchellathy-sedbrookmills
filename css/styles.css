@@ -194,6 +194,20 @@ h1 {
     color: #ffc700;
 
 }
+
+/* Style rules for elements on service page main */
+#service-content {
+    display: inline-block;
+    padding: 2em;
+}
+
+/* Style rules for elements on contact page main */
+#contact-content {
+    display: inline-block;
+    padding: 2em;
+}
+
+
 /* Style rules for footer content */
 footer {
     text-align: center;
@@ -289,6 +303,16 @@ footer {
     }
 
     .testimonial
+    
+    /* Tablet Viewport: Style rules for elements on service page main */
+    #service-content {
+        display: block;
+    }
+    
+    /* Tablet Viewport: Style rules for elements on contact page main */
+    #contact-content {
+        display: block;
+    }
     
     /*Tablet Viewport: Style rules for footer content */
     #grid {
