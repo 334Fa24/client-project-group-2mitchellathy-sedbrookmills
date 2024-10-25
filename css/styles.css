@@ -24,6 +24,12 @@ figure {
     color: #ffc700;
 }
 
+.button-container {
+    position: relative;
+    text-align: center;
+    color: #ffc700;
+}
+
 body {
     background-color: #fff;
     color: #000;
@@ -41,6 +47,26 @@ img {
     left: 2%;
     transform: translate(-50%, -31%);
     font-size: 4vw;
+}
+
+.button {
+    background-color: #ffc700;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 4vw;
+    border-radius: 2vw;
+    height: 8vw;
+    }
+
+.service {
+    position: relative;
+    align-content: center;
+    top: 88%;
+    left: 72%;
+    transform: translate(-53%, -196%);
+    color: #ffc700;
+    font-size: 6vw;
 }
 
 /* Style rule show mobile class and hide tablet-desktop and menu-links id*/
@@ -91,7 +117,7 @@ h1 {
     top: 0;
 }
 
-/* Style rules for main */
+/* Style rules for home main */
 
 .centered {
     position: abolute;
@@ -105,6 +131,26 @@ h1 {
     color: #ffc700;
     text-align: center;
 }
+
+.testimonial {
+    width: 400vw;
+    float: left;
+    display: block;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.book {
+    top: 87%;
+    left: 40%;
+    position: absolute;
+    }
+
+.graph {
+    font-size: 2em;
+    padding-right: 10px;
+    padding-left: 10px;
+    }
 
 /* Style rules for elements on about page main */
 
@@ -206,6 +252,17 @@ h1 {
     padding: 2em;
 }
 
+/* Style rules for book now main */
+.book-form {
+    padding-top: 108px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.form {
+    padding-right: 10px;
+    padding-left: 10px;
+}
 
 /* Style rules for footer content */
 footer {
@@ -263,6 +320,13 @@ footer {
         top: 50%;
         left: 50%;
     }
+    
+    .book {
+        top: 67%;
+        left: 40%;
+        position: absolute;
+    }
+    
     #strip {
         height: 35vw;
         padding-bottom: 10px;
@@ -300,8 +364,21 @@ footer {
         padding-right: 10px;
         float: right;
     }
-
-    .testimonial
+    
+    .testimonial {
+        width: 47vw;
+        align-content: center;
+}
+    
+    .service {
+    position: relative;
+    align-content: center;
+    top: 129%;
+    left: 70%;
+    transform: translate(-60%, -270%);
+    color: #ffc700;
+    font-size: 4vw;
+}
     
     /* Tablet Viewport: Style rules for elements on service page main */
     #service-content {
@@ -325,6 +402,13 @@ footer {
     }
 }
 
+/* Style rules for book now main */
+.book-form {
+    padding-top: 1px;
+    padding-left: 15px;
+    text-align: left;
+}
+
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 100px), print {
     /* Desktop Viewport: Show desktop class, hide mobile-tablet class*/
@@ -344,6 +428,10 @@ footer {
     }
 
     /* Desktop Viewport: Style rules for main area */
+    
+    .graph {
+        font-size: 3vw;
+    }
 
     /*Desktop Viewport: Style rules for footer content */
 }
