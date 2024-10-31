@@ -9,125 +9,132 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    
+
 </head>
-    
+
 <body>
-    
-    <div id="container">
-        
-   
-    
-    <header>
-        <img src="Images/square-png-17.png" class="logo" alt="Place holder for logo">
-       <!-- Tablet, Desktop Nav -->
-        <nav class="tablet-desktop">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="Booknow"><a href="book.html">Book Now</a></li>   
-        </ul>
-    </nav>
-        <!-- Mobile Nav -->
-   <nav class="mobile-nav">
-        <div id="menu-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="resources.html">Resources</a>
-            <a href="contact.html">Contact</a>
-            <a href="book.html">Book Now</a>
-        </div>
-        <a class="menu-icon" onclick="hamburger()">
-				<div>&#9776;</div>
-        </a>
-        </nav>
-    </header>
-    
-   
-    
-    <main>
-        
-        <div class="container">
-            <img src="images/pexels-goochie-poochie-19145878.jpg" alt="Dog getting its nails trimmed.">
-            <div class="centered">
-                <h1>Contact</h1>
-                <h3>Contact us today!</h3>
+
+    <div>
+
+
+
+        <header>
+            <img src="Images/square-png-17.png" class="logo" alt="Place holder for logo">
+            <!-- Tablet, Desktop Nav -->
+            <nav class="tablet-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="Booknow"><a href="book.html">Book Now</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile Nav -->
+            <nav class="mobile-nav">
+                <div id="menu-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="book.html">Book Now</a>
+                </div>
+                <a class="menu-icon" onclick="hamburger()">
+                    <div>&#9776;</div>
+                </a>
+            </nav>
+        </header>
+
+
+
+        <main>
+
+            <div class="container">
+                <img src="images/pexels-goochie-poochie-19145878.jpg" alt="Dog getting its nails trimmed.">
+                <div class="centered">
+                    <h1>Contact</h1>
+                    <h3>Contact us today!</h3>
+                </div>
             </div>
-        </div>
-        
-        <div id="contact-content">
-            <p>Phone: <a href="tel:+1234567890">(123)-456-7890</a></p>
-            <p>Hours:</p>
-            <ul>
-                <li>Mon-Fri: 8 AM - 6 PM</li>
-                <li>Saturday: 9 AM - 4 PM</li>
-                <li>Sunday: Closed</li>
-            </ul>
-            
-            <iframe title="maryville"
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78081.60562075635!2d-94.93649048409063!3d40.350476242765666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87eac4e050377d9d%3A0x6992857ebaf03d59!2sMaryville%2C%20MO%2064468!5e0!3m2!1sen!2sus!4v1729809036133!5m2!1sen!2sus"
-					width="330" height="" allowfullscreen class="map"></iframe>
-            <p>Social Media</p>
-            <ul>
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
-                <li><a href="https://www.facebook.com/">Facebook</a></li>
-                <li><a href="https://www.tiktok.com/">TikTok</a></li>
-            </ul>
-            
-            <h2>Check out our Paw-Print Reward Program!</h2>
-        </div>
-        
-        <img src="images/Screenshot%202024-10-24%20at%2011.55.25%20AM.png" alt="book now banner with dogs.">
-    </main>
-    
-    <footer>
-        
-        <div class="mobile">
-            <p>Maryville, Missouri</p>   
-            <p><a href="tel:1234567890">(123)456-7890</a></p>
-            <h3>Hours</h3>
-            <p>Monday - Friday: 8:00 AM – 6:00 PM</p>
-            <p>Saturday: 9:00 AM – 4:00 PM</p>
-            <p>Sunday: Closed</p>
-        </div>
-        
-        <div class="tablet-desktop" id="grid">
-            <div>
-                <h2>Location</h2>
-                <p>123 Main Street</p>
+
+            <div id="contact-content">
+                <article>
+                    <aside id="phone">
+                        <p>Phone: <a href="tel:+1234567890">(123)-456-7890</a></p>
+                    </aside>
+                    <aside id="hours">
+                        <p>Hours:</p>
+                        <p>Mon-Fri: 8 AM - 6 PM</p>
+                        <p>Saturday: 9 AM - 4 PM</p>
+                        <p>Sunday: Closed</p>
+                    </aside>
+
+                    <figure id="map">
+                        <iframe title="maryville" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78081.60562075635!2d-94.93649048409063!3d40.350476242765666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87eac4e050377d9d%3A0x6992857ebaf03d59!2sMaryville%2C%20MO%2064468!5e0!3m2!1sen!2sus!4v1729809036133!5m2!1sen!2sus" class="map"></iframe>
+                    </figure>
+
+                    <figure id="social">
+                        <p>Social Media</p>
+                        <p class="icons"><a href="https://www.instagram.com/">Instagram</a></p>
+                        <p class="icons"><a href="https://www.facebook.com/">Facebook</a></p>
+                        <p class="icons"><a href="https://www.tiktok.com/">TikTok</a></p>
+                    </figure>
+
+                    <figure id="rewards">
+                        <h2>Check out our Paw-Print Rewards Program!</h2>
+                    </figure>
+                </article>
+
+            </div>
+
+            <img src="images/Screenshot%202024-10-24%20at%2011.55.25%20AM.png" alt="book now banner with dogs.">
+        </main>
+
+        <footer>
+
+            <div class="mobile">
                 <p>Maryville, Missouri</p>
-                <p>64468</p>
-            </div>    
-        
-            <div>
-                <h2>Contact Information</h2>
                 <p><a href="tel:1234567890">(123)456-7890</a></p>
-                <p><a href="email:furryfreshgrooming@gmail.com">furryfreshgrooming@gmail.com</a></p>
-            </div>
-            
-            <div>
-                <h2>Hours</h2>
+                <h3>Hours</h3>
                 <p>Monday - Friday: 8:00 AM – 6:00 PM</p>
                 <p>Saturday: 9:00 AM – 4:00 PM</p>
                 <p>Sunday: Closed</p>
             </div>
-        </div>
-        
-        <p>&copy; Copyright 2024. All Rights Reserved.</p>
-        <img class="banner" src="images/dog-banner.jpg" alt="a line of dogs on a white background.">
 
-    </footer>
+            <div class="tablet-desktop" id="grid">
+                <div>
+                    <h2>Location</h2>
+                    <p>123 Main Street</p>
+                    <p>Maryville, Missouri</p>
+                    <p>64468</p>
+                </div>
 
-    
+                <div>
+                    <h2>Contact Information</h2>
+                    <p><a href="tel:1234567890">(123)456-7890</a></p>
+                    <p><a href="email:furryfreshgrooming@gmail.com">furryfreshgrooming@gmail.com</a></p>
+                </div>
+
+                <div>
+                    <h2>Hours</h2>
+                    <p>Monday - Friday: 8:00 AM – 6:00 PM</p>
+                    <p>Saturday: 9:00 AM – 4:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+
+            <p>&copy; Copyright 2024. All Rights Reserved.</p>
+            <img class="banner" src="images/dog-banner.jpg" alt="a line of dogs on a white background.">
+
+        </footer>
+
+
     </div>
-    
+
     <script src="scripts/script.js"></script>
-    
+
 </body>
 
 </html>
-      

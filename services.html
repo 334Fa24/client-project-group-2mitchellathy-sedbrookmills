@@ -9,182 +9,189 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    
+
 </head>
-    
+
 <body>
-    
-    <div id="container">
-        
-   
-    
-    <header>
-        <img src="Images/square-png-17.png" class="logo" alt="Place holder for logo">
-       
-    </header>
-        
-    <!-- Tablet, Desktop Nav -->
-    <nav class="tablet-desktop">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="Booknow"><a href="book.html">Book Now</a></li>   
-        </ul>
-    </nav>
+
+    <div>
+
+        <header>
+            <img src="Images/square-png-17.png" class="logo" alt="Place holder for logo">
+        </header>
+
+        <!-- Tablet, Desktop Nav -->
+        <nav class="tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="Booknow"><a href="book.html">Book Now</a></li>
+            </ul>
+        </nav>
         <!-- Mobile Nav -->
-    <nav class="mobile-nav">
-        <div id="menu-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="resources.html">Resources</a>
-            <a href="contact.html">Contact</a>
-            <a href="book.html">Book Now</a>
-        </div>
-        <a class="menu-icon" onclick="hamburger()">
-				<div>&#9776;</div>
-        </a>
-    </nav>
-    
-   
-    
-    <main>
-        <div class="container">
-            <img src="images/animal-6818310_1280.jpg" alt="Dalmation looking over top of photo.">
-            <div class="centered">
-                <h1>Services</h1>
-                <h3>Learn more about our services!</h3>
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+                <a href="book.html">Book Now</a>
             </div>
-        </div>
-        
-        <div id="service-content">
-            <div class="services">
-                <figure>
-                    <figcaption>Basic Bath & Brush</figcaption>
-                    <ul>
-                        <li>Gentle shampoo bath, brushing, and blow dry</li>
-                        <li>Nail trim, ear cleaning, and a spritz of cologne</li>
-                    </ul>
-                </figure>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
 
-                <figure>
-                    <figcaption>Full Grooming</figcaption>
-                    <ul>
-                        <li>Basic Bath & Brush</li>
-                        <li>Haircut or breed-specific styling by professional groomers</li>
-                        <li>Teeth brushing and de-shedding treatment available on request</li>
-                    </ul>
-                </figure>
 
-                <figure>
-                    <figcaption>Puppy's First Groom</figcaption>
-                    <ul>
-                        <li>Gentle introduction to grooming for puppies</li>
-                        <li>Light bath, brushing, and nail trim</li>
-                        <li>Fun, safe experience</li>
-                    </ul>
-                </figure>
 
-                <figure>
-                    <figcaption>De-shedding Treatment</figcaption>
-                    <ul>
-                        <li>Reduces shedding for long-haired or double-coated dogs</li>
-                        <li>Helps minimize shedding at home and keeps coats healthy</li>
-                    </ul>
-                </figure>
-
-                <figure>
-                    <figcaption>Deluxe Spa Package</figcaption>
-                    <ul>
-                        <li>Full Grooming and add-ons like deep conditioning, paw balm, and a blueberry facial for brightening</li>
-                        <li>Bandana or bow</li>
-                    </ul>
-                </figure>
-
-                <figure>
-                    <figcaption>Add-On Services</figcaption>
-                    <ul>
-                        <li>Teeth brushing</li>
-                        <li>Flea and tick treatment</li>
-                        <li>Special skin treatment for sensitive dogs</li>
-                        <li>Paw and nose moisturizing</li>
-                    </ul>
-                </figure>
+        <main>
+            <div class="container">
+                <img src="images/animal-6818310_1280.jpg" alt="Dalmation looking over top of photo.">
+                <div class="centered">
+                    <h1>Services</h1>
+                    <h3>Learn more about our services!</h3>
+                </div>
             </div>
-        
-        
-            <h2 id="extras">Furry Fresh Extras</h2>
 
-            <div class="extra-services">
-                <figure>
-                    <figcaption>Pet Bakery</figcaption>
-                    <p>Freshly baked, dog-friendly treats available for purchase</p>
-                </figure>
+            <div id="service-content">
+                <div class="service-grid">
+                    <figure onclick="bathBrush()">
+                        <h2 id="service1-title">Basic Bath & Brush</h2>
+                        <div id="bath-and-brush" class="service-info">
+                            <h3 class="desktop">Basic Bath & Brush</h3>
+                            <p>- Gentle shampoo bath, brushing, and blow dry</p>
+                            <p>- Nail trim, ear cleaning, and a spritz of cologne</p>
+                        </div>
+                    </figure>
 
-                <figure>
-                    <figcaption>Grooming Boutique</figcaption>
-                    <p>High- quality grooming tools, stylish collars, and pet accessories</p>
-                </figure>
+                    <figure onclick="fullGrooming()">
+                        <h2 id="service2-title">Full Grooming</h2>
+                        <div id="full-grooming" class="service-info">
+                            <h3 class="desktop">Full Grooming</h3>
+                            <p>- Basic Bath & Brush</p>
+                            <p>- Haircut or breed-specific styling by professional groomers</p>
+                            <p>- Teeth brushing and de-shedding treatment available on request</p>
+                        </div>
+                    </figure>
 
-                <figure>
-                    <figcaption>Doggie Daycare</figcaption>
-                    <p>While your pup is being groomed, they can enjoy supervised playtime with other friendly dogs</p>
-                </figure>
+                    <figure onclick="firstGroom()">
+                        <h2 id="service3-title">Puppy's First Groom</h2>
+                        <div id="first-groom" class="service-info">
+                            <h3 class="desktop">Puppy's First Groom</h3>
+                            <p>- Gentle introduction to grooming for puppies</p>
+                            <p>- Light bath, brushing, and nail trim</p>
+                            <p>- Fun, safe experience</p>
+                        </div>
+                    </figure>
 
+                    <figure onclick="deshedding()">
+                        <h2 id="service4-title">De-shedding Treatment</h2>
+                        <div id="deshedding" class="service-info">
+                            <h3 class="desktop">De-shedding Treatment</h3>
+                            <p>- Reduces shedding for long-haired or double-coated dogs</p>
+                            <p>- Helps minimize shedding at home and keeps coats healthy</p>
+                        </div>
+                    </figure>
+
+                    <figure onclick="deluxeSpa()">
+                        <h2 id="service5-title">Deluxe Spa Package</h2>
+                        <div id="deluxe-spa" class="service-info">
+                            <h3 class="desktop">Deluxe Spa Package</h3>
+                            <p>- Full Grooming and add-ons like deep conditioning, paw balm, and a blueberry facial for brightening</p>
+                            <p>- Bandana or bow</p>
+                        </div>
+                    </figure>
+
+                    <figure onclick="addOns()">
+                        <h2 id="service6-title">Add-On Services</h2>
+                        <div id="add-ons" class="service-info">
+                            <h3 class="desktop">Add-On Services</h3>
+                            <p>- Teeth brushing</p>
+                            <p>- Flea and tick treatment</p>
+                            <p>- Special skin treatment for sensitive dogs</p>
+                            <p>- Paw and nose moisturizing</p>
+                        </div>
+                    </figure>
+
+                    <h2 id="extras">Furry Fresh Extras</h2>
+
+                    <figure onclick="petBakery()">
+                        <h2 id="service7-title">Pet Bakery</h2>
+                        <div id="pet-bakery" class="service-info">
+                            <h3 class="desktop">Pet Bakery</h3>
+                            <p>Freshly baked, dog-friendly treats available for purchase</p>
+                        </div>
+                    </figure>
+
+                    <figure onclick="groomingBoutique()">
+                        <h2 id="service8-title">Grooming Boutique</h2>
+                        <div id="grooming-boutique" class="service-info">
+                            <h3 class="desktop">Grooming Boutique</h3>
+                            <p>High- quality grooming tools, stylish collars, and pet accessories</p>
+                        </div>
+                    </figure>
+
+                    <figure onclick="doggieDaycare()">
+                        <h2 id="service9-title">Doggie Daycare</h2>
+                        <div id="doggie-daycare" class="service-info">
+                            <h3 class="desktop">Doggie Daycare</h3>
+                            <p>While your pup is being groomed, they can enjoy supervised playtime with other friendly dogs</p>
+                        </div>
+                    </figure>
+
+                </div>
             </div>
-        </div>
-        
-        <img src="images/Screenshot%202024-10-24%20at%2011.55.25%20AM.png" alt="book now banner with dogs.">
-        
-    </main>
-    
-    <footer>
-        
-        <div class="mobile">
-            <p>Maryville, Missouri</p>   
-            <p><a href="tel:1234567890">(123)456-7890</a></p>
-            <h3>Hours</h3>
-            <p>Monday - Friday: 8:00 AM – 6:00 PM</p>
-            <p>Saturday: 9:00 AM – 4:00 PM</p>
-            <p>Sunday: Closed</p>
-        </div>
-        
-       <div class="tablet-desktop" id="grid">
-            <div>
-                <h2>Location</h2>
-                <p>123 Main Street</p>
+
+            <img src="images/Screenshot%202024-10-24%20at%2011.55.25%20AM.png" alt="book now banner with dogs.">
+
+        </main>
+
+        <footer>
+
+            <div class="mobile">
                 <p>Maryville, Missouri</p>
-                <p>64468</p>
-            </div>    
-        
-            <div>
-                <h2>Contact Information</h2>
                 <p><a href="tel:1234567890">(123)456-7890</a></p>
-                <p><a href="email:furryfreshgrooming@gmail.com">furryfreshgrooming@gmail.com</a></p>
-            </div>
-            
-            <div>
-                <h2>Hours</h2>
+                <h3>Hours</h3>
                 <p>Monday - Friday: 8:00 AM – 6:00 PM</p>
                 <p>Saturday: 9:00 AM – 4:00 PM</p>
                 <p>Sunday: Closed</p>
             </div>
-        </div>
-        
-        <p>&copy; Copyright 2024. All Rights Reserved.</p>
-        <img class="banner" src="images/dog-banner.jpg" alt="a line of dogs on a white background.">
 
-    </footer>
+            <div class="tablet-desktop" id="grid">
+                <div>
+                    <h2>Location</h2>
+                    <p>123 Main Street</p>
+                    <p>Maryville, Missouri</p>
+                    <p>64468</p>
+                </div>
 
-    
+                <div>
+                    <h2>Contact Information</h2>
+                    <p><a href="tel:1234567890">(123)456-7890</a></p>
+                    <p><a href="email:furryfreshgrooming@gmail.com">furryfreshgrooming@gmail.com</a></p>
+                </div>
+
+                <div>
+                    <h2>Hours</h2>
+                    <p>Monday - Friday: 8:00 AM – 6:00 PM</p>
+                    <p>Saturday: 9:00 AM – 4:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+
+            <p>&copy; Copyright 2024. All Rights Reserved.</p>
+            <img class="banner" src="images/dog-banner.jpg" alt="a line of dogs on a white background.">
+
+        </footer>
+
     </div>
-    
+
     <script src="scripts/script.js"></script>
-    
+
 </body>
 
 </html>
-      

@@ -10,7 +10,7 @@ header,
 nav,
 main,
 footer,
-figure {
+figure, div {
     margin: 0;
     padding: 0;
     border: 0;
@@ -57,7 +57,7 @@ img {
     font-size: 4vw;
     border-radius: 2vw;
     height: 8vw;
-    }
+}
 
 .service {
     position: relative;
@@ -74,7 +74,7 @@ img {
     display: block;
 }
 
-.tablet-desktop,
+.tablet-desktop, .desktop,
 #menu-links {
     display: none;
 }
@@ -144,13 +144,13 @@ h1 {
     top: 87%;
     left: 40%;
     position: absolute;
-    }
+}
 
 .graph {
     font-size: 2em;
     padding-right: 10px;
     padding-left: 10px;
-    }
+}
 
 /* Style rules for elements on about page main */
 
@@ -161,26 +161,27 @@ h1 {
 }
 
 .Employee {
-    color:black;
+    color: black;
     text-align: center;
-    border:double;
+    border: double;
     padding-top: 3em;
     margin: 5em;
 }
 
 .names {
-    color:black;
+    color: black;
 
 }
+
 .about_info {
     text-align-last: center;
     margin: 5em;
-    border:double;
-    padding:3em;
+    border: double;
+    padding: 3em;
 }
 
 .container_about {
-     position: relative;
+    position: relative;
     text-align: center;
     color: #ffc700;
 }
@@ -189,11 +190,12 @@ h1 {
     text-align: center;
     background-color: #A7E7FC;
     height: 7em;
-   
+
 }
+
 .meet_our_team {
     height: 100%;
-    }
+}
 
 
 .employee_photos {
@@ -210,46 +212,135 @@ h1 {
 
 .tips {
     padding: 10%;
-    border:double;
-    border-color:  #ffc700;
+    border: double;
+    border-color: #ffc700;
 }
+
 .questions {
     padding: 10%;
-    border:double;
-    border-color:#A7E7FC;
+    border: double;
+    border-color: #A7E7FC;
 }
 
 #grid_resources {
-     display: grid;
+    display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
 }
 
 .testamonial {
-    color:black;
+    color: black;
     text-align: center;
-    border:double;
+    border: double;
     padding-top: 3em;
     margin: 5em;
-    background-color: #A7E7FC; 
+    background-color: #A7E7FC;
 }
 
 .container_resources {
-      position: relative;
+    position: relative;
     text-align: center;
     color: #ffc700;
 }
 
 /* Style rules for elements on service page main */
-#service-content {
+
+#bath-and-brush, #full-grooming, #first-groom, #deshedding, #deluxe-spa, 
+#add-ons, #pet-bakery, #grooming-boutique, #doggie-daycare {
+    padding: 0 2em;
+    display: none;
+}
+
+.service-info p {
+    font-size: 3.5vw;
+}
+
+.service-grid {
     display: inline-block;
     padding: 2em;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.service-grid figure{
+    background-color: #ffc700;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 3 / 1;
+    margin: 2em 0;
+    align-content: center;
+}
+
+.service-grid h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 8vw;
+}
+
+.service-grid p {
+    text-align: left;
+    margin: 0;
+}
+
+.service-grid li {
+    list-style-type: none;
 }
 
 /* Style rules for elements on contact page main */
 #contact-content {
     display: inline-block;
     padding: 2em;
+}
+
+#phone, #map, #social, #rewards {
+    text-align: center;
+}
+
+#phone {
+    border: 10px solid rgba(167, 231, 252, 1);    
+}
+
+#hours {
+    border: 10px solid #ffc700;
+    margin-top: 15px;
+}
+
+#hours p:first-of-type {
+    text-align: center;
+}
+
+#map {
+    margin-top: 15px;
+}
+
+#social {
+    border: 10px solid rgba(167, 231, 252, 1);
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#social p:first-of-type {
+    grid-column: 1 / span 3;
+}
+
+#social .icons {
+    background-color: black;
+    aspect-ratio: 1;
+    width:75%;
+    align-content: center;
+}
+
+#phone p, #hours p {
+    margin: 0;
+    padding: .5em;
+    font-size: 5vw;
+}
+
+#rewards {
+    margin-top: 15px;
+    background-color: #ffc700;
+    padding: 0.2em;
 }
 
 /* Style rules for book now main */
@@ -278,7 +369,9 @@ footer {
 }
 
 /* Mobile Query for Tablet Viewport */
-@media screen and (min-width: 620px), print {
+@media screen and (min-width: 620px),
+print {
+
     /*Tablet Viewport: Show tablet-desktop class, hide mobile class */
     .tablet-desktop {
         display: block;
@@ -320,13 +413,13 @@ footer {
         top: 50%;
         left: 50%;
     }
-    
+
     .book {
         top: 67%;
         left: 40%;
         position: absolute;
     }
-    
+
     #strip {
         height: 35vw;
         padding-bottom: 10px;
@@ -364,32 +457,106 @@ footer {
         padding-right: 10px;
         float: right;
     }
-    
+
     .testimonial {
         width: 47vw;
         align-content: center;
-}
-    
+    }
+
     .service {
-    position: relative;
-    align-content: center;
-    top: 129%;
-    left: 70%;
-    transform: translate(-60%, -270%);
-    color: #ffc700;
-    font-size: 4vw;
-}
-    
+        position: relative;
+        align-content: center;
+        top: 129%;
+        left: 70%;
+        transform: translate(-60%, -270%);
+        color: #ffc700;
+        font-size: 4vw;
+    }
+
     /* Tablet Viewport: Style rules for elements on service page main */
     #service-content {
-        display: block;
+        padding: 1em;
     }
     
+    #bath-and-brush, #full-grooming, #first-groom, #deshedding, #deluxe-spa, 
+    #add-ons, #pet-bakery, #grooming-boutique, #doggie-daycare {
+        padding: 0 1.5em;
+        display: none;
+    }
+
+    .service-info h3{
+        margin:0;
+        text-align: center;
+        font-size: 2vw;
+    }
+    
+    .service-info p {
+        font-size: 1.5vw;
+    }
+
+    .service-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 2em;
+    }
+
+    .service-grid figure {
+        background-color: #ffc700;
+        aspect-ratio: 1;
+        display:block;
+        margin: 0;
+    }
+    
+    .service-grid h2 {
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .service-grid #extras {
+        grid-column: 1 / span 3;
+    }
+
     /* Tablet Viewport: Style rules for elements on contact page main */
-    #contact-content {
-        display: block;
+    #contact-content article{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 15px;
+        max-width: 100%
     }
     
+    #phone {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #phone p {
+        font-size: 4vw;
+    }
+    
+    #hours {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top:0;
+    }
+    
+    #hours p {
+        font-size:4vw;
+    }
+    
+    #map {
+        grid-column: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin-top:0;
+    }  
+    
+    #social {
+        margin-top:0;
+    }
+    
+    #rewards {
+        margin-top:0;
+    }
+
     /*Tablet Viewport: Style rules for footer content */
     #grid {
         display: grid;
@@ -410,7 +577,9 @@ footer {
 }
 
 /* Media Query for Desktop Viewport */
-@media screen and (min-width: 100px), print {
+@media screen and (min-width: 1000px),
+print {
+
     /* Desktop Viewport: Show desktop class, hide mobile-tablet class*/
     .desktop {
         display: block;
@@ -428,16 +597,33 @@ footer {
     }
 
     /* Desktop Viewport: Style rules for main area */
-    
+
     .graph {
         font-size: 3vw;
     }
+    
+    /* Desktop Viewport: Style rules for elements on service page main */
+    #service-content {
+        padding: 0 10em;
+    }
+    
+    .service-grid h2 {
+        font-size: 3.5vw;
+    }
+    
+    /* Tablet Viewport: Style rules for elements on contact page main */
+    
+    #phone p, #hours p {
+        font-size: 2.5vw;
+    }
+    
 
     /*Desktop Viewport: Style rules for footer content */
 }
 
 /* Media Query for Large Desktop Viewports */
-@media screen and (min-width: 1921px), print {
+@media screen and (min-width: 1921px),
+print {
     /* Large Desktop Viewport: Style rules for header area */
 
     /* Large Desktop Viewport: Style rules for nav area */
