@@ -39,6 +39,38 @@ img {
     max-width: 100%;
 }
 
+/*style rules for the book now button about page*/
+
+.button-container-about {
+    position: relative;
+    text-align: center;
+    color: #ffc700;
+    width: 100%;
+}
+
+.button-about {
+    background-color: #ffc700;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 4vw;
+    border-radius: 2vw;
+    height: 8vw;
+    position: absolute;
+    top: 37%;
+    left: 41%;
+    }
+
+/*style rules for the book now button about page*/
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
 /* Style rules for mobile viewport */
 
 .centered {
@@ -160,12 +192,12 @@ h1 {
     grid-gap: 10px;
 }
 
-.Employee {
+.employee {
     color: black;
     text-align: center;
     border: double;
     padding-top: 3em;
-    margin: 5em;
+    margin: 8em;
 }
 
 .names {
@@ -190,6 +222,8 @@ h1 {
     text-align: center;
     background-color: #A7E7FC;
     height: 7em;
+    padding: 2em;
+    
 
 }
 
@@ -207,19 +241,21 @@ h1 {
 /*style rules for the Resources main*/
 
 .QandA_Tips {
-    margin: 15%;
+    width:100%;
 }
 
 .tips {
     padding: 10%;
     border: double;
     border-color: #ffc700;
+    margin: 8em;
 }
 
 .questions {
     padding: 10%;
     border: double;
     border-color: #A7E7FC;
+    margin: 8em;
 }
 
 #grid_resources {
@@ -231,7 +267,6 @@ h1 {
 .testamonial {
     color: black;
     text-align: center;
-    border: double;
     padding-top: 3em;
     margin: 5em;
     background-color: #A7E7FC;
@@ -369,7 +404,7 @@ footer {
 }
 
 /* Mobile Query for Tablet Viewport */
-@media screen and (min-width: 620px),
+@media screen and (max-width: 1023px),
 print {
 
     /*Tablet Viewport: Show tablet-desktop class, hide mobile class */
@@ -384,7 +419,23 @@ print {
     }
 
     /* Tablet Viewport: Style rules for header area */
+.mobile-nav a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 1.75em;
+    color: #ffc700;
+    padding: 3%;
+    position: fixed;
+}
 
+ a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+} 
+    
     /* Tablet Viewport: Style rules for nav area */
     nav {
         padding: 1%;
@@ -557,6 +608,22 @@ print {
         margin-top:0;
     }
 
+    /* Tablet mobile view for about main*/
+    
+    
+  
+   #grid_about_resource{
+        display:none;
+    }
+    
+   .mobile-about_resource {
+        display:block;
+    } 
+    
+    
+  
+    /* Tablet mobile view for resource main */
+    
     /*Tablet Viewport: Style rules for footer content */
     #grid {
         display: grid;
@@ -585,7 +652,15 @@ print {
         display: block;
     }
 
+    .tablet-desktop {
+        display: block;
+    }
+
     .mobile-tablet {
+        display: none;
+    }
+    
+    .mobile {
         display: none;
     }
 
@@ -594,6 +669,30 @@ print {
     /* Desktop Viewport: Style rules for nav area */
     nav li {
         font-size: 2em;
+    }
+    
+    .mobile-nav {
+        display:none;
+    }
+     nav {
+        padding: 1%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: end;
+    }
+
+    nav li {
+        font-size: 2em;
+        display: inline-block;
+    }
+
+    nav li a {
+        text-decoration: none;
+        padding: 0 0.25em;
+        display: block;
+        color: #ffc700;
     }
 
     /* Desktop Viewport: Style rules for main area */
@@ -617,12 +716,31 @@ print {
         font-size: 2.5vw;
     }
     
+    /* Style for Desktop about main */
+    
+
+/* Style rules for resources main */
+    #grid_about_resource {
+        display: block;
+    }
+    
+  .mobile_about_resource {
+        display: none;
+    } 
+    /*Desktop Viewport: Style rules for footer content */
+    
+     #grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+    }
+
 
     /*Desktop Viewport: Style rules for footer content */
 }
 
 /* Media Query for Large Desktop Viewports */
-@media screen and (min-width: 1921px),
+@media screen and (min-width: 1024px),
 print {
     /* Large Desktop Viewport: Style rules for header area */
 
