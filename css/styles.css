@@ -404,7 +404,7 @@ footer {
 }
 
 /* Mobile Query for Tablet Viewport */
-@media screen and (max-width: 1023px),
+@media screen and (min-width: 620px),
 print {
 
     /*Tablet Viewport: Show tablet-desktop class, hide mobile class */
@@ -419,22 +419,22 @@ print {
     }
 
     /* Tablet Viewport: Style rules for header area */
-.mobile-nav a {
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    font-size: 1.75em;
-    color: #ffc700;
-    padding: 3%;
-    position: fixed;
-}
+    .mobile-nav a {
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-size: 1.75em;
+        color: #ffc700;
+        padding: 3%;
+        position: fixed;
+    }
 
- a.menu-icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-} 
+     a.menu-icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    } 
     
     /* Tablet Viewport: Style rules for nav area */
     nav {
