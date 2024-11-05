@@ -6,6 +6,8 @@
     <title> Furry Fresh Grooming</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your appointment with Furry Fresh Grooming and choose your desired services.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -55,55 +57,75 @@
                 
                   <h2 class="book-form">Book your appointment here!</h2>
                 
-                <fieldset>
+                <fieldset id="input">
                     <label for="fname">First Name:</label>
-                    <input type="text">
+                    <input id="fname" type="text">
+                    <p></p>
                     <label for="lname">Last Name:</label>
-                    <input type="text">
+                    <input id="lname" type="text">
+                    <p></p>
                     <label for="phone">Phone Number:</label>
-                    <input type="number">
+                    <input id="phone" type="number">
+                    <p></p>
                     <label for="email">Email:</label>
-                    <input type="text">
+                    <input id="email" type="text">
+                    <p></p>
                     <label for="address">Address (If booking Mobile Grooming)</label>
+                    <input id="address" type="text">
                 </fieldset>
                 
-                <fieldset>
+                <fieldset id="input-2">
                     <label for="pname">Pet Name</label>
-                    <input type="text">
+                    <input id="pname" type="text">
+                    <p></p>
                     <label for="breed">Breed</label>
-                    <input type="text">
+                    <input id="breed" type="text">
+                    <p></p>
                     <label for="height">Height</label>
-                    <input type="text">
+                    <input id="height" type="text">
+                    <p></p>
                     <label for="weight">Weight</label>
-                    <input type="text">
+                    <input id="weight" type="text">
+                    <p></p>
                     <label for="requests">Any special requests or information we should know about?</label>
+                    <p></p>
+                    <input id="requests" type="text">
                 </fieldset>
                 
-                <fieldset>
+                <fieldset id="input-3">
                     <h3>What services would you like to sign up for? (Check all that apply)</h3>
+                    <input id="service-1" type="checkbox">
                     <label for="service-1">Basic Bath and Brush</label>
-                    <input type="checkbox">
+                    <p></p>
+                    <input id="service-2" type="checkbox">
                     <label for="service-2">Full Grooming</label>
-                    <input type="checkbox">
+                    <p></p>
+                    <input id="service-3" type="checkbox">
                     <label for="service-3">Puppy's First Groom</label>
-                    <input type="checkbox">
+                    <p></p>
+                    <input id="service-4" type="checkbox">
                     <label for="service-4">De-shedding Treatment</label>
-                    <input type="checkbox">
+                    <p></p>
+                    <input id="service-5" type="checkbox">
                     <label for="service-5">Deluxe Spa Package</label>
-                    <input type="checkbox">
+                    <p></p>
+                    <input id="service-6" type="checkbox">
                     <label for="service-6">Mobile Grooming Service</label>
-                    <input type="checkbox">
+                    <p></p>
+                    <input id="service-7" type="checkbox">
                     <label for="service-7">Teeth Brushing</label>
-                    <input type="checkbox">
+                    <p></p>
+                    <input id="service-8" type="checkbox">
                     <label for="service-8">Flea and Tick Treatment</label>
-                    <input type="checkbox">
+                    <p></p>
+                    <input id="service-9" type="checkbox">
                     <label for="service-9">Special Skin Treatments for Sensitive Dogs</label>
-                    <input type="checkbox">
+                    <p></p>
+                    <input id="service-10" type="checkbox">
                     <label for="service-10">Paw and Nose Moisturizing</label>
-                    <input type="checkbox">
                 </fieldset>
                 
-                <input type="submit" value="Submit">
+                <input class="btn" type="submit" value="Submit">
                 
             </form>
         </div>
