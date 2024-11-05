@@ -101,7 +101,7 @@ img {
     font-size: 6vw;
 }
 
-/* Style rule show mobile class and hide tablet-desktop and menu-links id*/
+/* Style rule show mobile class and hide  and menu-links id*/
 .mobile {
     display: block;
 }
@@ -403,6 +403,7 @@ footer {
 print {
 
     /*Tablet Viewport: Show tablet-desktop class, hide mobile class */
+   
     .tablet-desktop {
         display: block;
     }
@@ -581,7 +582,7 @@ print {
         display:none;
     }
     
-   .mobile-about_resource {
+   .mobile_about_resource {
         display:block;
     } 
     
