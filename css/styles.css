@@ -279,53 +279,40 @@ h1 {
 }
 
 /* Style rules for elements on service page main */
+.service-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 115px 135px 115px 115px 115px 135px auto 75px 75px 95px;
+    grid-gap: 20px;
+    padding: 20px;
+    
+}
 
-#bath-and-brush, #full-grooming, #first-groom, #deshedding, #deluxe-spa, 
-#add-ons, #pet-bakery, #grooming-boutique, #doggie-daycare {
-    padding: 0 2em;
-    display: none;
+.service-block {
+    background-color: #ffc700;
+}
+
+.service-block h2 {
+    text-align: center;
+    font-size: 1.7em;    
+}
+
+.service-info {
+    display:none;
+    padding: 1em;
 }
 
 .service-info p {
-    font-size: 3.5vw;
+    margin: 0;
+    font-size: 1.2em;
 }
 
-.service-grid {
-    display: inline-block;
-    padding: 2em;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.service-grid figure{
-    background-color: #ffc700;
-    height: 100%;
-    width: 100%;
-    aspect-ratio: 3 / 1;
-    margin: 2em 0;
-    align-content: center;
-}
-
-.service-grid h2 {
+#furry-fresh-extras {
     text-align: center;
-    margin: 0;
-    font-size: 8vw;
-}
-
-.service-grid p {
-    text-align: left;
-    margin: 0;
-}
-
-.service-grid li {
-    list-style-type: none;
 }
 
 /* Style rules for elements on contact page main */
-#contact-content {
-    display: inline-block;
-    padding: 2em;
-}
+
 
 #phone, #map, #social, #rewards {
     text-align: center;
@@ -361,7 +348,6 @@ h1 {
 
 #social .icons {
     background-color: black;
-    aspect-ratio: 1;
     width:75%;
     align-content: center;
 }
@@ -525,47 +511,17 @@ print {
     }
 
     /* Tablet Viewport: Style rules for elements on service page main */
-    #service-content {
-        padding: 1em;
-    }
     
-    #bath-and-brush, #full-grooming, #first-groom, #deshedding, #deluxe-spa, 
-    #add-ons, #pet-bakery, #grooming-boutique, #doggie-daycare {
-        padding: 0 1.5em;
-        display: none;
-    }
-
-    .service-info h3{
-        margin:0;
-        text-align: center;
-        font-size: 2vw;
-    }
-    
-    .service-info p {
-        font-size: 1.5vw;
-    }
-
     .service-grid {
         display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 2em;
-    }
-
-    .service-grid figure {
-        background-color: #ffc700;
-        aspect-ratio: 1;
-        display:block;
-        margin: 0;
+        grid-template-columns: 31% 31% 31%;
+        grid-template-rows: 220px 200px 65px 185px;
     }
     
-    .service-grid h2 {
-        text-align: center;
-        font-size: 4vw;
+    #furry-fresh-extras {
+        grid-column: 1 / span 3
     }
-
-    .service-grid #extras {
-        grid-column: 1 / span 3;
-    }
+    
 
     /* Tablet Viewport: Style rules for elements on contact page main */
     #contact-content article{
@@ -702,12 +658,16 @@ print {
     }
     
     /* Desktop Viewport: Style rules for elements on service page main */
-    #service-content {
-        padding: 0 10em;
+    
+    .service-grid {
+        padding: 2em 8em;
+        grid-template-columns: 31.5% 31.5% 31.5%;
+        grid-template-rows: 240px 240px 70px 190px;
     }
     
-    .service-grid h2 {
-        font-size: 3.5vw;
+    .service-grid h3 {
+        margin-bottom: 10px;
+        text-align: center;
     }
     
     /* Tablet Viewport: Style rules for elements on contact page main */
