@@ -185,7 +185,7 @@ h1 {
 
 /* Style rules for elements on about page main */
 
-#grid_about {
+#grid_about_resource{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
@@ -194,9 +194,10 @@ h1 {
 .employee {
     color: black;
     text-align: center;
-    border: double;
+    border: solid;
     padding-top: 3em;
     margin: 8em;
+    min-width: 50%;
 }
 
 .names {
@@ -207,11 +208,13 @@ h1 {
 .about_info {
     text-align-last: center;
     margin: 5em;
-    border: double;
+    border: solid;
     padding: 3em;
+    border-color: #ffc700;
+    border-width: 8px;
 }
 
-.container_about {
+.container_about_resources {
     position: relative;
     text-align: center;
     color: #ffc700;
@@ -220,11 +223,13 @@ h1 {
 .employee_intro {
     text-align: center;
     background-color: #A7E7FC;
-    height: 7em;
+    height: 3em;
     padding: 2em;
-    
+    color: #ffc700;
+    font-size: 30px
 
 }
+
 
 .meet_our_team {
     height: 100%;
@@ -239,22 +244,40 @@ h1 {
 
 /*style rules for the Resources main*/
 
-.QandA_Tips {
-    width:100%;
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #A7E7FC ;
 }
 
-.tips {
-    padding: 10%;
-    border: double;
-    border-color: #ffc700;
-    margin: 8em;
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
 }
 
-.questions {
-    padding: 10%;
-    border: double;
-    border-color: #A7E7FC;
-    margin: 8em;
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color:  #ffc700;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }
 
 #grid_resources {
@@ -399,7 +422,7 @@ footer {
 }
 
 /* Mobile Query for Tablet Viewport */
-@media screen and (min-width: 620px),
+@media screen and (max-width: 999px),
 print {
 
     /*Tablet Viewport: Show tablet-desktop class, hide mobile class */
@@ -713,7 +736,7 @@ print {
 
 /* Style rules for resources main */
     #grid_about_resource {
-        display: block;
+        display: grid;
     }
     
   .mobile_about_resource {
