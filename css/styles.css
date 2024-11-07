@@ -126,6 +126,8 @@ h1 {
     width: 100px;
     height: 100px;
     float: left;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 .Booknow {
@@ -307,7 +309,6 @@ h1 {
     grid-template-rows: 115px 135px 115px 115px 115px 135px auto 75px 75px 95px;
     grid-gap: 20px;
     padding: 20px;
-    
 }
 
 .service-block {
@@ -316,7 +317,45 @@ h1 {
 
 .service-block h2 {
     text-align: center;
-    font-size: 1.7em;    
+    font-size: 2em;
+    align-content: center;
+}
+
+/*bath and brush*/
+#service1-title{
+    height: 61px;
+}
+/*full grooming*/
+#service2-title {
+    height: 81px;
+}
+/*first groom*/
+#service3-title {
+    height: 62px
+}
+/*deshedding treatment*/
+#service4-title {
+    height: 61px
+}
+/*deluxe spa treatment*/
+#service5-title {
+    height: 61px;
+}
+/*add-on services*/
+#service6-title {
+    height: 81px;
+}
+/*pet bakery*/
+#service7-title {
+    margin: 18.5px 0;
+}
+/*grooming boutique*/
+#service8-title {
+    margin: 19px 0;
+}
+/*doggie daycare*/
+#service9-title {
+    height: 42px;
 }
 
 .service-info {
@@ -329,9 +368,55 @@ h1 {
     font-size: 1.2em;
 }
 
+#bath-and-brush {
+    height: 82px;
+    align-content: center;
+}
+
+#full-grooming {
+    height: 102px;
+    align-content: center;
+}
+
+#first-groom {
+    height: 82px;
+    align-content: center;
+}
+
+#deshedding {
+    height: 83px;
+    align-content: center;
+}
+
+#deluxe-spa {
+    height: 82px;
+    align-content: center;
+}
+
+#add-ons {
+    height: 102px;
+    align-content: center;
+}
+
+#pet-bakery {
+    height: 42px;
+    align-content: center;
+}
+
+#grooming-boutique {
+    height: 42px;
+    align-content: center;
+}
+
+#doggie-daycare {
+    height: 62px;
+    align-content: center;
+}
+
 #furry-fresh-extras {
     text-align: center;
 }
+
 
 /* Style rules for elements on contact page main */
 
@@ -547,13 +632,47 @@ print {
     
     .service-grid {
         display: grid;
-        grid-template-columns: 31% 31% 31%;
+        grid-template-columns: 31% 32% 31%;
         grid-template-rows: 220px 200px 65px 185px;
     }
     
     #furry-fresh-extras {
         grid-column: 1 / span 3
     }
+    
+    .service-block h2 {
+        padding: 0 0.5em
+    }
+    
+    /*bath and brush, full grooming, first groom*/
+    #service1-title, #service2-title, #service3-title{
+        height: 167px;
+    }
+    /*deshedding treatment, deluxe spa, add-ons*/
+    #service4-title, #service5-title, #service6-title {
+        height: 147px
+    }
+    /*pet bakery, grooming boutique, doggie daycare*/
+    #service7-title, #service8-title, #service9-title {
+        margin: auto;
+        height: 183px;
+    }
+    
+    #bath-and-brush, #full-grooming, #first-groom {
+        height: 187px;
+        align-content: center;
+    }
+
+    #deshedding, #deluxe-spa, #add-ons {
+        height: 167px;
+        align-content: center;
+    }    
+
+    #pet-bakery, #grooming-boutique, #doggie-daycare {
+        height: 152px;
+        align-content: center;
+    }
+
     
 
     /* Tablet Viewport: Style rules for elements on contact page main */
@@ -724,6 +843,26 @@ print {
         margin-bottom: 10px;
         text-align: center;
     }
+    
+    .service-block h2 {
+        padding: 0 0.5em
+    }
+    
+    /*bath and brush, full grooming, first groom, deshedding treatment, deluxe spa, add-ons, pet bakery, grooming boutique, doggie daycare*/
+    #service1-title, #service2-title, #service3-title, #service4-title, #service5-title, #service6-title,#service7-title, #service8-title, #service9-title{
+        height: 187px;
+    }
+    
+    #bath-and-brush, #full-grooming, #first-groom, #deshedding, #deluxe-spa, #add-ons{
+        height: 207px;
+        align-content: center;
+    }   
+
+    #pet-bakery, #grooming-boutique, #doggie-daycare {
+        height: 152px;
+        align-content: center;
+    }
+
     
     /* Tablet Viewport: Style rules for elements on contact page main */
     
