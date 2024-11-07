@@ -420,55 +420,87 @@ h1 {
 
 /* Style rules for elements on contact page main */
 
-
-#phone, #map, #social, #rewards {
-    text-align: center;
+#contact-content {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 2em;
+    grid-gap: 20px;
 }
 
 #phone {
-    border: 10px solid rgba(167, 231, 252, 1);    
+    border: 10px solid rgba(167, 231, 252, 1);
+}
+
+#phone p {
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 10px;
+}
+
+#phone p a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
 }
 
 #hours {
+    padding-bottom: 10px;
     border: 10px solid #ffc700;
-    margin-top: 15px;
 }
 
 #hours p:first-of-type {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: bold
+}
+
+#hours .times {
+    margin: 10px;
+    font-size: 1.2em;
     text-align: center;
 }
 
 #map {
-    margin-top: 15px;
+    text-align: center;
 }
 
 #social {
     border: 10px solid rgba(167, 231, 252, 1);
-    margin-top: 15px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 34% 33%;
 }
 
 #social p:first-of-type {
     grid-column: 1 / span 3;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: bold;
 }
 
 #social .icons {
-    background-color: black;
-    width:75%;
+    height: 80px;
+    margin: 0 10px 10px;
+    background-color: lightgray;
     align-content: center;
-}
-
-#phone p, #hours p {
-    margin: 0;
-    padding: .5em;
-    font-size: 5vw;
+    text-align: center; 
 }
 
 #rewards {
-    margin-top: 15px;
+    margin-top: 10px;
     background-color: #ffc700;
-    padding: 0.2em;
+    font-size: 1.2em;
+}
+
+#rewards h2 {
+    margin: 0;
+    height: 150px;
+    text-align: center;
+    align-content: center;
+    padding: 0 15px;
 }
 
 /* Style rules for book now main */
@@ -507,7 +539,7 @@ footer {
 }
 
 /* Mobile Query for Tablet Viewport */
-@media screen and (max-width: 999px),
+@media screen and (min-width: 620px),
 print {
 
     /*Tablet Viewport: Show tablet-desktop class, hide mobile class */
@@ -676,44 +708,52 @@ print {
     
 
     /* Tablet Viewport: Style rules for elements on contact page main */
-    #contact-content article{
+    #contact-content {
         display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 15px;
-        max-width: 100%
+        grid-template-columns: 55% 42%;
+        grid-template-rows: auto auto auto;
+        grid-gap: 20px;
+        padding: 2em 10em;
     }
     
-    #phone {
-        grid-column: 1;
-        grid-row: 1;
+    #phone, #hours, #social, #map, #rewards {
+        margin:0
     }
-    #phone p {
-        font-size: 4vw;
+    
+    #phone a{
+        font-size: 1em;
     }
     
     #hours {
         grid-column: 1;
-        grid-row: 2;
-        margin-top:0;
-    }
-    
-    #hours p {
-        font-size:4vw;
     }
     
     #map {
         grid-column: 2;
         grid-row-start: 1;
         grid-row-end: 3;
-        margin-top:0;
     }  
     
     #social {
-        margin-top:0;
+        display:grid;
+        grid-template-rows: 45% auto;
+    }
+    
+    #social p:first-of-type {
+        margin: 0;
+        align-content: center;
+    }
+    
+    #social .icons {
+        height: 60px;
     }
     
     #rewards {
-        margin-top:0;
+        height: 100%;
+    }
+    
+    #rewards h2 {
+        font-size: 1.3em;
     }
 
     /* Tablet mobile view for about main*/
@@ -862,13 +902,27 @@ print {
         height: 152px;
         align-content: center;
     }
-
     
-    /* Tablet Viewport: Style rules for elements on contact page main */
-    
-    #phone p, #hours p {
-        font-size: 2.5vw;
+    #bath-and-brush h3, #full-grooming h3, #first-groom h3, #deshedding h3, #deluxe-spa h3, #add-ons h3, #pet-bakery h3, #grooming-boutique h3, #doggie-daycare h3{
+        margin-top: 0
     }
+    
+    /* Desktop Viewport: Style rules for elements on contact page main */
+    
+    #contact-content {
+        display: grid;
+        grid-template-columns: 55% 43%;
+        grid-template-rows: auto auto auto;
+    }
+    
+    #hours .times {
+        font-size: 1.75em;
+    }
+    
+    #rewards h2 {
+        font-size: 1.5em;
+    }
+    
     
     /* Style for Desktop about main */
     
@@ -894,7 +948,7 @@ print {
 }
 
 /* Media Query for Large Desktop Viewports */
-@media screen and (min-width: 1024px),
+@media screen and (min-width: 1025px),
 print {
     /* Large Desktop Viewport: Style rules for header area */
 
@@ -902,6 +956,11 @@ print {
 
     /* Large Desktop Viewport: Style rules for main area */
 
+    /* Large Desktop Viewport: Style rules for elements on contact page main */
+    #contact-content {
+        padding: 2em 25em;
+    }
+    
     /* Large Desktop Viewport: Style rules for footer content */
 }
 
