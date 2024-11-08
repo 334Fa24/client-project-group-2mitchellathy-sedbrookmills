@@ -57,8 +57,8 @@ img {
     border-radius: 2vw;
     height: 8vw;
     position: absolute;
-    top: 37%;
-    left: 41%;
+    top: 415%;
+    left: 40%;
     }
 
 /*style rules for the book now button about page*/
@@ -658,6 +658,11 @@ print {
         transform: translate(-60%, -270%);
         color: #ffc700;
         font-size: 4vw;
+    }
+    
+    .button-about {
+    top: 265%;
+    left: 40%;
     }
 
     /* Tablet Viewport: Style rules for elements on service page main */
