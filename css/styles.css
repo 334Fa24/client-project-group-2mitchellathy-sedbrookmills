@@ -48,6 +48,15 @@ img {
     width: 100%;
 }
 
+.button-container-index {
+    position: relative;
+    text-align: center;
+    color: #ffc700;
+    width: 100%;
+    float: none;
+}
+
+
 .button-about {
     background-color: #ffc700;
     border: none;
@@ -57,8 +66,8 @@ img {
     border-radius: 2vw;
     height: 8vw;
     position: absolute;
-    top: 415%;
-    left: 40%;
+    top: 37%;
+    left: 41%;
     }
 
 /*style rules for the book now button about page*/
@@ -660,10 +669,6 @@ print {
         font-size: 4vw;
     }
     
-    .button-about {
-    top: 265%;
-    left: 40%;
-    }
 
     /* Tablet Viewport: Style rules for elements on service page main */
     
