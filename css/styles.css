@@ -39,13 +39,13 @@ img {
     max-width: 100%;
 }
 
-/*style rules for the book now button about page*/
+/*style rules for the book now button all pages*/
 
 .button-container-about {
     position: relative;
-    text-align: center;
     color: #ffc700;
     width: 100%;
+    clear: both;
 }
 
 .button-container-index {
