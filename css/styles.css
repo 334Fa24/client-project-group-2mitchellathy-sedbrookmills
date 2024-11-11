@@ -48,14 +48,6 @@ img {
     clear: both;
 }
 
-.button-container-index {
-    position: relative;
-    text-align: center;
-    color: #ffc700;
-    width: 100%;
-    float: none;
-}
-
 
 .button-about {
     background-color: #ffc700;
