@@ -9,11 +9,17 @@ Date: 10/17/2024
 //Hamburger menu function
 function hamburger() {
     var menu = document.getElementById("menu-links");
+    var logo = document.getElementById("logo");
+    var headerImage = document.getElementById("header-image");
     if (menu.style.display === "block") {
         menu.style.display = "none";
+        logo.style.display = "block";
+        headerImage.style.display = "block";
     }
     else {
         menu.style.display = "block";
+        logo.style.display = "none";
+        headerImage.style.display = "none";
     }
 }
 
