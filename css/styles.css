@@ -78,7 +78,7 @@ img {
     position: absolute;
     top: 9%;
     left: 2%;
-    transform: translate(-50%, -31%);
+    transform: translate(-50%, -37%);
     font-size: 4vw;
 }
 
@@ -95,7 +95,7 @@ img {
 .service {
     position: relative;
     align-content: center;
-    top: 88%;
+    top: 75%;
     left: 72%;
     transform: translate(-53%, -196%);
     color: #ffc700;
@@ -601,7 +601,7 @@ print {
     /* Tablet Viewport: Style rules for main area */
 
     .centered {
-        top: 50%;
+        top: 71%;
         left: 50%;
     }
 
