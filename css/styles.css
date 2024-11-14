@@ -81,11 +81,11 @@ img {
 }
 
 .centered h1 {
-    font-size: 2.5em;
+    font-size: 8vw;
 }
 
 .centered h3 {
-    font-size: 1.5em;
+    font-size: 4.2vw;
 }
 
 .button {
@@ -600,13 +600,13 @@ print {
         margin-top: -55%;
     }
 
-    .centered h1 {
-        font-size: 4.5em;
-    }
+   .centered h1 {
+    font-size: 8vw;
+}
 
-    .centered h3 {
-        font-size: 2.5em;
-    }
+.centered h3 {
+    font-size: 3.5vw;
+}
 
     .book {
         top: 67%;
