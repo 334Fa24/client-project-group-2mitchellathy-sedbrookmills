@@ -101,8 +101,6 @@ img {
 .service {
     position: relative;
     align-content: center;
-    top: 75%;
-    left: 72%;
     transform: translate(-53%, -196%);
     color: #ffc700;
     font-size: 6vw;
@@ -602,11 +600,11 @@ print {
 
    .centered h1 {
     font-size: 8vw;
-}
+    }
 
-.centered h3 {
+    .centered h3 {
     font-size: 3.5vw;
-}
+    }
 
     .book {
         top: 67%;
@@ -650,6 +648,7 @@ print {
         height: 25vw;
         padding-right: 10px;
         float: right;
+        padding-top: 20px;
     }
 
     .testimonial {
