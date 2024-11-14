@@ -101,7 +101,7 @@ img {
 .service {
     position: relative;
     align-content: center;
-    transform: translate(-53%, -196%);
+    transform: translate(19%, -196%);
     color: #ffc700;
     font-size: 6vw;
 }
