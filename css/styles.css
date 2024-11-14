@@ -650,9 +650,10 @@ print {
     }
 
     .testimonial {
-        width: 47vw;
-        align-content: center;
-    }
+    width: 47vw; 
+    display: grid;
+    grid-column: 1 / span 2  
+}
 
     .service {
         position: relative;
