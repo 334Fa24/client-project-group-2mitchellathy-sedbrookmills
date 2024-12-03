@@ -546,6 +546,14 @@ h1 {
 }
 
 /* Style rules for footer content */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
 footer {
     text-align: center;
     font-size: 0.85em;
@@ -800,6 +808,14 @@ print {
     /* Tablet mobile view for resource main */
     
     /*Tablet Viewport: Style rules for footer content */
+    .tablet-desktop {
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
     #grid {
         display: grid;
         grid-template-columns: auto auto auto;
