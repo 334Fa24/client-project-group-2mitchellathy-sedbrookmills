@@ -317,7 +317,7 @@ h1 {
 .service-grid {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 115px 135px 115px 115px 115px 135px auto 75px 75px 95px;
+    grid-template-rows: 115px 135px 115px 115px 115px 135px auto auto 75px 75px 95px;
     grid-gap: 20px;
     padding: 20px;
 }
@@ -429,7 +429,20 @@ h1 {
     align-content: center;
     margin: 0;
     font-size: 35px;
-    padding: 20px 0;
+    padding: 15px 0;
+}
+
+.mobile-grooming h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+    margin-top: 1em;
+}
+
+.mobile-grooming p {
+    background-color: rgba(167, 231, 252, 1);
+    padding: 20px;
+    font-size: 1.25em;
 }
 
 
@@ -673,12 +686,16 @@ print {
     .service-grid {
         display: grid;
         grid-template-columns: 31% 32% 31%;
-        grid-template-rows: 220px 200px 65px 185px;
+        grid-template-rows: 220px 200px auto 65px 185px;
     }
     
     #furry-fresh-extras {
         grid-column: 1 / span 3;
-        padding: 0;
+    }
+    
+    .mobile-grooming {
+        grid-column: 1 / span 3;
+        padding: 0 4em;
     }
     
     .service-block h2 {
@@ -930,7 +947,7 @@ print {
     .service-grid {
         padding: 2em 8em;
         grid-template-columns: 31.5% 31.5% 31.5%;
-        grid-template-rows: 240px 240px 70px 190px;
+        grid-template-rows: 240px 240px 230px 70px 190px;
     }
     
     .service-grid h3 {
@@ -940,6 +957,10 @@ print {
     
     .service-block h2 {
         padding: 0 0.5em
+    }
+    
+    .mobile-grooming {
+        padding: 0 10em;
     }
     
     /*bath and brush, full grooming, first groom, deshedding treatment, deluxe spa, add-ons, pet bakery, grooming boutique, doggie daycare*/
