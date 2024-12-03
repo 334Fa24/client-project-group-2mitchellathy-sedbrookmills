@@ -177,6 +177,11 @@ h1 {
     text-align: center;
 }
 
+.home {
+    text-decoration: none;
+    color: #ffc700;
+}
+
 .testimonial {
     width: 400vw;
     float: left;
