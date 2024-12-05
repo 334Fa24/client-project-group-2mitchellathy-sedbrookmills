@@ -1011,11 +1011,6 @@ print {
         color:black;
     }
     
-    .book-now:hover {
-        /*background-color: black;*/
-    }
-
-    
 
     /* Desktop Viewport: Style rules for main area */
 
@@ -1075,9 +1070,6 @@ print {
         font-size: 1.75em;
     }
     
-    #social .icons{
-        
-    }
     
     #rewards:hover {
         background-color: rgba(167, 231, 252, 1); 
