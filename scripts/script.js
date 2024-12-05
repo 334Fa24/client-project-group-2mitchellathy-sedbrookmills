@@ -175,3 +175,14 @@ function bookNow() {
   window.location.href = "book.html";
 
 }
+
+//Functions for Contact Page
+function showRewardsInfo() {
+    var info = document.getElementById("reward-info");
+    if (info.style.display === "none") {
+        info.style.display = "block";
+    }
+    else {
+        info.style.display = "none";
+    }
+}
