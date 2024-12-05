@@ -579,6 +579,15 @@ footer {
     color: black;
 }
 
+ #grid_about_resource{
+        display:none;
+    }
+    
+   .mobile_about_resource {
+        display:block;
+    } 
+    
+
 /* Mobile Query for Tablet Viewport */
 @media screen and (min-width: 620px),
 print {
@@ -790,14 +799,7 @@ print {
     
     
   
-   #grid_about_resource{
-        display:none;
-    }
-    
-   .mobile_about_resource {
-        display:block;
-    } 
-    
+  
     /* Tablet view for Book Now page */
     
     .form {
@@ -850,6 +852,7 @@ print {
     padding-left: 15px;
     text-align: left;
 }
+
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1000px),
