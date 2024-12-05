@@ -217,6 +217,7 @@ h1 {
     padding-top: 3em;
     margin: 8em;
     min-width: 50%;
+   
 }
 
 .names {
@@ -240,6 +241,7 @@ h1 {
     padding: 2em;
     color: #ffc700;
     font-size: 30px
+    max width: 100%;
 
 }
 
@@ -250,9 +252,10 @@ h1 {
 
 
 .employee_photos {
-    height: 80%;
+    height: 70%;
     width: 90%;
     align-content: center;
+ 
 }
 
 /*style rules for the Resources main*/
@@ -575,7 +578,7 @@ footer {
     color: #000000;
 }
 
-.Employee {
+.employee {
     color: black;
 }
 
@@ -797,7 +800,14 @@ print {
 
     /* Tablet mobile view for about main*/
     
+    /*resources and about view tablet*/
+    #grid_about_resource{
+       display: grid;
+    }
     
+   .mobile_about_resource {
+        display: none;
+    } 
   
   
     /* Tablet view for Book Now page */
