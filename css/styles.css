@@ -215,7 +215,7 @@ h1 {
     text-align: center;
     border: solid;
     padding-top: 3em;
-    margin: 8em;
+    margin: 4em;
     min-width: 50%;
    
 }
@@ -240,9 +240,8 @@ h1 {
     height: 3em;
     padding: 2em;
     color: #ffc700;
-    font-size: 30px
-    max width: 100%;
-
+    font-size: 30px;
+    width: 100%;
 }
 
 
@@ -576,6 +575,7 @@ footer {
     font-weight: bold;
     background-color: rgba(167, 231, 252, 1);
     color: #000000;
+    
 }
 
 .employee {
